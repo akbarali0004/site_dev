@@ -1,0 +1,12 @@
+.main{
+    display: grid;
+    gap: 10px;
+}
+
+.card{
+    width: 600px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(216, 233, 233);
+    color: blue;
+}
