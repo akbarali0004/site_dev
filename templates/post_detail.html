@@ -1,0 +1,15 @@
+{% extends "base.html"%}
+
+{% block title %}
+    <title>Post</title>
+{% endblock %}
+
+{% block content %}
+    <div style="background-color: rgb(217, 230, 230); padding: 20px; margin: 15px;">
+        <h2 style="text-align: center; color: blue;">{{post.title}}</h2><br>
+        <p>{{post.content}}</p>
+        <p style="text-align: right; color: rgb(5, 5, 105); margin-right: 50px;"><i>{{post.author}}</i></p>
+        <button><a href="{% url 'post_edit' post.id %}">Post edit</a></button>
+        <button><a href="{% url 'post_delete' post.id %}">Post delete</a></button>
+    </div>
+{% endblock %}

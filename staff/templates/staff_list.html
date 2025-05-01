@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title%}
+<title>Staff</title>
+{% endblock %}
+
+{%block content%}
+    <center><h1>Staff</h1></center>
+        <button style="margin-left: 48px;"><a href="{%url 'create'%}">Add Staff</a></button>
+        <div class="staffs row m-5">
+            {%for i in staffs%}
+                <div class="cards col-4 border">
+                    <h3><a href="{% url 'staff-view' i.id %}">{{i.name}} {{i.surname}}</a></h3>
+                    <p><b>Age: </b>{{i.age}}</p>
+                    <p><b>Phone: </b>+{{i.phone}}</p>
+                    <p><b>Email: </b>{{i.email}}</p>
+                </div>
+            {%endfor%}
+        </div>
+{% endblock%}
+
+
+
+<!-- <body>
+    {% for xodim in stafflar %}
+        <p>{{ xodim.name }}</p>
+        <p>{{ xodim.phone_number }}</p>
+    {% endfor %}
+
+</body> -->

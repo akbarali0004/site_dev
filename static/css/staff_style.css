@@ -1,0 +1,41 @@
+form{
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 5px 20px 20px 20px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 5px;
+    background: linear-gradient(to right bottom, grey, cyan, rgb(85, 204, 85));
+}
+
+h1{
+    text-align: center;
+    color: rgb(17, 17, 73);
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #222;
+}
+
+input, button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 5px #333;
+}
+
+button{
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: rgb(21, 209, 21);
+    color: snow;
+}
